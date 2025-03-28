@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat con Salas</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <div class="chat-container">
+            <!-- Panel de Salas -->
+            <div class="rooms-panel">
+                <h3>Salas Disponibles</h3>
+                <div class="room-actions">
+                    <input type="text" id="roomNameInput" placeholder="Nombre de sala">
+                    <button id="createRoomBtn">Crear Sala</button>
+                </div>
+                <ul id="roomsList">
+                    <!-- Las salas se cargarán dinámicamente aquí -->
+                </ul>
+            </div>
+
+            <!-- Área de Chat -->
+            <div class="chat-area">
+                <div class="chat-header">
+                    <h2 id="currentRoom">Selecciona una sala</h2>
+                </div>
+                <div class="messages-container" id="messagesContainer">
+                    <!-- Los mensajes aparecerán aquí -->
+                </div>
+                <div class="message-input">
+                    <input type="text" id="messageInput" placeholder="Escribe un mensaje..." disabled>
+                    <button id="sendMessageBtn" disabled>Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/chat.js"></script>
+</body>
+</html>
